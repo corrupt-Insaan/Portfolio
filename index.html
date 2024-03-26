@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src=Images\_89f32816-e530-4858-9c94-02b66721c41b-removebg-preview.png alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hello World!<br> I'm <span>Yash</span><br> Front end Developer</h1>
+                <p>From Nepal</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img src=Images\_0445615f-2dd7-4a0f-81a4-75e229500b7b.jpg alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>👋 Hello there! I'm a frontend developer with a passion for crafting captivating user experiences and bringing designs to life through code. With a blend of creativity and technical skills, I specialize in building intuitive and responsive web applications that seamlessly interact with users.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> - HTML5</span></li>
+                            <li><span> - React.js</span></li>
+                            <li><span> - UI/UX</span> - Designing web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>ABC limited</span> - Frontend Developer (2022-present)</li>
+                            <li><span>XYZ Enterprises</span> - Frontend Developer (2018-2021)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University</span> - BIT(2015-2017)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume">
+        <div class="container">
+            <h1 class="sub-title">Resume</h1>
+            <div class="resume-item">
+                <h2>Professional Summary</h2>
+                <p>Sure, here's a simpler version:
+
+                    "I'm a frontend developer with experience in HTML5, CSS3, and JavaScript (the newer version). I know how to use popular frameworks like React.js, Angular, and Vue.js. I'm good at making websites work well on different devices and browsers. I also focus on making websites load fast. I'm good at talking to others and working together to make sure we build what users need. I love learning new things and keeping up with what's new in my field."</p>
+            </div>
+            <div class="resume-item">
+                <h2>Education</h2>
+                <ul>
+                    <li>BIT - University (2015-2017)</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>frontend Developer - ABC limited (2022-present)</li>
+                    <li>Frontend Developer - XYZ Enterprises (2018-2021)</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>UI/UX - Designing web/App Interfaces</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h2>Projects or Portfolio</h2>
+                <p>E-commerce Website</p>
+                <p>Blogging Platform</p>
+                <p>portfolio Website</p>
+                <p>Online Learning Platform</p>
+            </div>
+            <div class="resume-item">
+                <h2>Achievements and Awards</h2>
+                <p>Employee of the Month</p>
+                <p>Team Leadership</p>
+                <p>Conference Speaker</p>
+                <p>Innovation Award</p>
+                <p>Open Source Contributions</p>
+
+            </div>
+            <div class="resume-item">
+                <h2>References</h2>
+                <p>No references</p>
+            </div>
+            <button onclick="downloadCV()">Download CV</button>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact</h1>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><img src="path/to/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="path/to/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="path/to/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="path/to/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
